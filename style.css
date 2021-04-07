@@ -6,8 +6,16 @@
     box-sizing: border-box;
 }
 
+html, p{
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    overflow-y: hidden;
+}
+
 a {
-    text-decoration: none;
     cursor: pointer;
 }
 
@@ -20,6 +28,7 @@ nav{
     justify-content: space-around;
     width: 20%;
     margin-left: auto;
+    padding: 1rem;
 }
 
 nav a{
@@ -27,6 +36,7 @@ nav a{
     margin-top: 15px;
     font-size: 11px;
     font-family: 'Roboto';
+    text-decoration: none;
 }
 
 nav img{
@@ -34,32 +44,145 @@ nav img{
     margin-top: 10px;
 }
 
-nav img:hover {
-    background-color: #696969;
-    border-radius: 50px; 
-}
-
 nav button{
-    background-color: #4169E1;
+    background-color: #597eed;
     color: white;
     padding: 0.5rem 1.5rem;
     border-radius: 3px;
-    border: 1px solid #4169E1;
+    border: 1px solid #597eed;
     margin-top: 7px;
+    cursor: pointer;
 }
 
 nav button:hover {
-    padding: 0.55rem 1.55rem;
+    background-color: #4169E1;
+    border: 1px solid #4169E1;
     transition: 0.3s ease-in-out;
 }
 
 main {
+    width: 50%;
+    text-align: center;
+    margin: 9.6rem auto;
+}
 
+main img{
+    height:150px;
+}
+
+input {
+    position: relative;
+    width: 80%;
+    padding: 1rem;
+    border-radius: 30px;
+    border: 1px solid grey;
+    outline: none;
+}
+
+input:hover, input:active {
+    box-shadow:  0 1px 3px 1px rgba(0, 0, 0, 0.19);
+}
+
+.btn-container {
+    margin-top: 2rem;
+}
+
+.btn-container button {
+    font-family: 'Roboto';
+    font-size: 13px;
+    padding: .7rem;
+    margin-right: 10px;
+    cursor: pointer;
+    border: .2px solid grey;
+    border-radius: 3px;
+}
+
+.btn-container button:hover {
+    border: 1px solid grey;
+}
+
+.languages {
+    margin-top: 2rem;
+}
+
+.languages p{
+    font-size: 9px;
+    font-family: 'Roboto';
+}
+
+.languages p a{
+    text-decoration: none;
+    margin: 5px;
+    color: #192099;
+}
+
+.languages p a:hover{
+    text-decoration: underline;
 }
 
 footer {
-
+    background-color: rgb(236, 236, 240);
+    height: 90px;
 }
+
+.footer-top {
+    padding: 1rem;
+    font-size: 13px;
+    font-family: 'Roboto';
+    height: 45px;
+}
+
+.footer-bottom {
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    border-top: 1px solid grey;
+}
+
+.left a{
+    margin-right: 1rem;
+    font-size: 11px;
+    font-family: 'Roboto';
+    color: #000;
+    text-decoration: none;
+}
+
+.right a{
+    margin-right: 1rem;
+    font-size: 11px;
+    font-family: 'Roboto';
+    color: #000;
+    text-decoration: none;
+}
+
+.middle a{
+    margin-right: 1rem;
+    font-size: 11px;
+    font-family: 'Roboto';
+    color: #000;
+    text-decoration: none;
+}
+
+.middle img{
+    background-color: rgb(236, 236, 240);
+    height: 12px;
+    cursor: pointer;
+}
+
+.left a:hover, .right a:hover, .middle a:hover {
+    text-decoration: underline;
+}
+
+/*
+
+.search-icon {
+}
+
+.mic-icon {
+}
+
+
+
 
 
 
